@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Piedra Papel o Tijera</title>
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="css/ppt.css">
+        <script src="js/funciones.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Staatliches&display=swap" rel="stylesheet">
+
+    </head>
+    <header>
+        <div class="titulo"> 
+            <h1></h1>
+
+        </div>
+    </header>
+    <body>
+        <div class="contenedor">
+            <div class="decoracion">
+                <div class="punto , verde"></div>
+                <div class="punto , azul"></div>
+                <div class="x , punto"></div>
+
+            </div>
+            <div class="contenedor2">
+                <div class="inicio">
+                    <div class="texto">
+                        <h1>Piedra Papel o Tijera</h1>
+                        <h5>Juega contra tu computador</h6>
+                    </div>
+                    <div class="botones">
+                        <button class="btn_inicio">Iniciar</button>
+                        <button class="btn_volver">Volver</button>
+                    </div>
+                   
+                </div>
+                <div class="usuario_elige">
+                    <h2>Elige tu movimiento</h2>
+                    <ul>
+                        <li><div class="animacion_piedra"></div>
+                            <button class="btn_piedra">Piedra</button>
+                        </li>
+                        <li>
+                            <div class="animacion_papel"></div>
+                            <button class="btn_papel">Papel</button>
+                        </li>
+                        <li>
+                            <div class="animacion_tijera"></div>
+                            <button class="btn_tijera">Tijera</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="computador_elige">
+                    <h2>La Computadora Eligió:</h2> 
+                    <div class="cont0">            
+                        <div class="animacion_computador"></div>
+                        <h5 class="eleccion_computador"></h5>
+                    </div>    
+                    <div class="cont">
+                        <button class="btn_continuar">Continuar</button>
+                        <button class="btn_cancelar">Cancelar</button>
+                    </div>   
+                </div>
+                <div class="resultado">
+                    <h1></h1>
+                    <h2></h2>
+                    <button>Volver a empezar</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

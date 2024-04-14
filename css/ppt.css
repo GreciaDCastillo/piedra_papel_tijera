@@ -1,0 +1,250 @@
+:root{
+box-sizing: border-box;
+font-family: sans-serif;
+--jasmine: #FEE489ff;
+--atomic-tangerine: #FEAE82ff;
+--mindaro: #E0EF83ff;
+--tea-green: #BFF3C7ff;
+--navajo-white: #FDDEB1ff;
+--antique-white: #FEF0DCff;
+--jasper: #D6644Cff;
+--zomp: #4BA182ff;
+--jet: #2C2C2Cff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+body{
+    font-family: "K2D", sans-serif;
+}
+header{
+    background-color: var(--mindaro);
+    height: 180px;
+}
+.contenedor{
+    width: 100%;
+    max-width: 790px;
+    height: 550px;
+    margin: auto;
+    margin-top: 150px;
+    background: var(--atomic-tangerine);
+    border-radius: 10px;
+    border: var(--jasper) 3px solid;
+    box-shadow: 5px 5px 0px var(--jasper);
+}
+.decoracion{
+    width: 96px;
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 19px;
+    margin-left:680px ;
+    position: fixed;
+
+}
+.punto{
+    width: 26px;
+    height: 26px;
+    border-radius: 5px;
+}
+.verde{
+    background-color: var(--mindaro);
+}
+.azul{
+    background-color: var(--tea-green);
+}
+.x{
+    background-color: var(--jasper);
+    
+}
+.contenedor2{
+    width: 100%;
+    max-width: 760px;
+    height: 100%; 
+    max-height: 470px;
+    margin: auto;
+    margin-top: 65px;
+    background: var(--antique-white);
+}
+button{
+    background: var(--mindaro);
+    color: var(--zomp);
+    font-family:"K2D", sans-serif ;
+    font-size: 23px;
+    width: 100%;
+    max-width: 186px;
+    border: none;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.inicio{
+    padding-top: 30px;
+    padding-left: 55px;
+    
+}
+.inicio h1{
+    width: 280px;
+    font-size: 47px;
+    font-weight: 400;
+    color: var(--zomp);
+    margin-bottom: 20px;
+
+}
+.inicio h5{
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--jet);
+    margin-bottom: 158px;
+}
+.inicio .botones{
+    display: flex;
+    justify-content: end;
+
+}
+.inicio .botones button{
+    margin-right: 30px; 
+}
+.btn_volver{
+    background-color: var(--atomic-tangerine);
+    color: var(--antique-white);
+}
+.usuario_elige{
+    padding: 0px 95px;
+    padding-top: 40px;
+}
+.usuario_elige h2{
+    font-size: 40px;
+    color: var(--zomp);
+    font-weight: 400;
+    margin-bottom: 60px;
+    
+}
+.usuario_elige ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.usuario_elige ul > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.usuario_elige ul > li > div {
+    margin: 0;
+    padding: 0;
+    background-color: var(--jasper);
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuario_elige ul > li > button {
+    padding: 0;
+    margin-top: 50px; 
+    width: 133px;
+    height: 26px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.usuario_elige ul li:hover .animacion_papel, .usuario_elige ul li:hover .animacion_tijera, .usuario_elige ul li:hover .animacion_piedra{
+    animation: anim_sprites 1500ms steps(23) alternate infinite;
+}
+
+.usuario_elige ul li .animacion_papel{
+    background: url(../imgs/sprite_papel.png);
+}
+.usuario_elige ul li .animacion_tijera{
+    background: url(../imgs/sprite_tijeras.png);
+}
+.usuario_elige ul li .animacion_piedra{
+    background: url(../imgs/sprite_piedra.png);
+}
+
+.btn_piedra{
+    background-color: var(--tea-green);
+    color: var(--zomp);
+    border: 2px solid var(--zomp);
+}
+.btn_papel{
+    background-color: var(--mindaro);
+    color: var(--zomp);
+    border: 2px solid var(--zomp);
+}
+.btn_tijera{
+    background-color: var(--atomic-tangerine);
+    color: var(--jasper);
+    border: 2px solid var(--jasper);
+}
+.computador_elige{
+    padding-top: 30px;
+    padding-left: 55px;
+}
+.computador_elige h2{
+    width: 300px;
+    font-size: 40px;
+    color: var(--zomp);
+    font-weight: 400;
+}
+.computador_elige .cont0{
+    margin-left: 490px;
+}
+.computador_elige .cont0 h5{
+    position: relative;
+    top: 200px;
+    font-size: 23px;
+    font-weight: 500;
+    color: var(--jet);
+    margin-top: -75px; 
+    display: flex;
+    justify-content: center;
+}
+
+.cont {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-end; 
+    margin-top: 120px;
+    margin-right: 30px;
+}
+.cont > button {
+    margin-left: 30px;
+}
+.btn_cancelar{
+    background-color: var(--atomic-tangerine);
+    color: var(--jasper);
+}
+.computador_elige .animacion_papel{
+    background: url(../imgs/sprite_papel.png);
+
+}
+.computador_elige .animacion_tijera{
+    background: url(../imgs/sprite_tijeras.png);
+}
+.computador_elige .animacion_piedra{
+    background: url(../imgs/sprite_piedra.png);
+}
+.computador_elige .animacion_papel, .computador_elige .animacion_tijera, .computador_elige .animacion_piedra{
+    animation: anim_sprites 1500ms steps(23) alternate infinite;
+    width: 184px;
+    height: 184px;
+    border-radius: 10px;
+}
+
+@keyframes anim_sprites {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -6900px 0;
+    }
+}
